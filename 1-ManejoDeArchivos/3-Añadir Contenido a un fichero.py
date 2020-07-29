@@ -1,4 +1,4 @@
-archivo = open('archivo1.txt','a') #a append
+archivo = open('archivo1.txt','a') #a append, con el metodo append añadimos datos a un archivo
 
 dedicacion = input('Ingrese dedicación: ')
 

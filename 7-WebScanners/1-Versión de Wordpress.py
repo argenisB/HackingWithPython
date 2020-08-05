@@ -5,7 +5,7 @@ def main():
     """
     Función para determinar la versión de wordpress de una página Web
     """
-    url = 'https://www.example.com'
+    url = 'https://www.wpwhitesecurity.com'
     cabecera = {'User-Agent': 'Firefox'}
     peticion = requests.get(url=url, headers=cabecera)
     # print(peticion.text)
@@ -14,7 +14,6 @@ def main():
     try:
         for v in soup.find_all('meta'):  # generator se encuentra en la etiqueta meta
             if v.get('name') == 'generator':
-                global version
                 version = v.get('content')
         print('La versión de Wordpress de este sitio es: ', version)
     except:

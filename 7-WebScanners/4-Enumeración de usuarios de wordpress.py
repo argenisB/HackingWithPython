@@ -4,7 +4,7 @@ def main():
     """
     Enumeración de usuarios de un sitio web Wordpress
     """
-    url_original = "https://example/wp-json/wp/v2/users" #cambiar example por el sitio a analizar
+    url_original = "https://example/wp-json/wp/v2/users" #cambiar example por el sitio a analizarr
     url = ur.urlopen(url_original)
     print(f'El sitio de Wordpress a analizar es: {url_original}')
     for u in json.loads(url.read()):

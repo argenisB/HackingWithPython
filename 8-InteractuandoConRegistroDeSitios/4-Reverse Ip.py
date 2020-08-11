@@ -9,7 +9,7 @@ def main():
     c= b.find(id='null') #buscamos el id null del codigo fuente que hace referencia a la tabla
     d = c.find(border='1') #ahora accedo a la otra tabla
     for link in d.find_all('tr'):
-        print('Sitio encontrado: '+link.td.string)
+        print('Sitio web encontrado: '+link.td.string)
 
 
 try:

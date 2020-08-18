@@ -6,7 +6,7 @@ def main():
     Detecta el cloudfare de un sitio web
     """
     word = 'cloudflare'
-    url = requests.get("https://www.cloudflare.com/es-la/")
+    url = requests.get("") #aquí va la url del sitio a analizar
     cabeceras = dict(url.headers) #convertimos las cabeceras de la respuesta de la peticion a dicionario
     verify = False
     #print(cabeceras)
